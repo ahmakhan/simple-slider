@@ -1,0 +1,100 @@
+/*
+* Custom Style Sheet for Simple Slider
+* Author: Mohammad khan
+*/
+
+div.simple-slider {
+  max-width: 960px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+ul.entry-content.simple-slides {
+  text-align: center;
+}
+
+li.simple-slide {
+  display: none;
+}
+
+li.simple-slide.current-slide {
+  display: list-item;
+}
+
+li.simple-slide {
+  max-width: 960px;
+  padding: 0 20px 50px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  float: left;
+  font-size: 20px;
+  color: #666;
+  display: none;
+}
+
+li.simple-slide:first-child {
+  display: unset;
+}
+
+li.simple-slide h4 {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 40px 0;
+}
+
+li.simple-slide img {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+ol.slider-index-holder {
+  text-align: center;
+  margin: 5% auto;
+}
+
+li.slider-index {
+  height: 5px;
+  width: 5px;
+  background: #eee;
+  display: inline-block;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+
+li.slider-index.current-index {
+  background: #e5a450;
+}
+
+li.slider-index:hover {
+  background-color: #fc6047;
+}
+
+
+
+/* ========== Media Query =========== */
+
+@media screen and (max-width: 1024px) {
+  li.simple-slide h4 {
+    font-size: 15px;
+    padding: 30px 0;
+  }
+  li.simple-slide {
+    font-size: 15px;
+    padding-bottom: 30px;
+  }
+  li.simple-slide img {
+    width: 75px;
+  }
+}
+@media screen and (max-width: 768px) {
+  li.slider-index {
+    padding: 5px;
+    margin: 5px;
+  }
+}
